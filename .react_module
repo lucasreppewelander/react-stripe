@@ -1,0 +1,6 @@
+{
+    "path": "src/components",
+    "es6": true,
+    "extension": "js",
+    "css": "scss"
+}
