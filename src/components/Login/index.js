@@ -7,27 +7,23 @@ class Login extends Component {
         super(props);
 
         this.state = {
-            username: null,
-            password: null
+            credentials: {
+                username: null,
+                password: null
+            }
         }
 
         this.login = this.login.bind(this);
     }
 
     setvalue(type, e) {
-        if (type === 'username') {
-            this.setState({
-                username: e.target.value
-            });
-        } else {
-            this.setState({
-                password: e.target.value
-            })
-        }
+        let state = this.state.credentials;
+        state[type] = e.target.value;
+        this.setState({ credentials: state });
     }
 
     login() {
-        localStorage.setItem('user', `${this.state.username}-${this.state.password}`);
+        localStorage.setItem('user', `${this.state.credentials.username}-${this.state.credentials.password}`);
         this.props.router.push('/');
     }
 

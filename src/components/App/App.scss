@@ -1,0 +1,131 @@
+.wrapper {
+    margin: 0 auto;
+    width: 980px;
+
+    .customer-columns {
+        padding: 5em 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            padding: 5px 10px;
+            vertical-align: middle;
+            display: block;
+            float: right;
+            line-height: 21px;
+
+            i.fa {
+                margin-left: .4em;
+            }
+        }
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #444;
+        letter-spacing: -1px;
+        font-weight: 600;
+    }
+
+    .btn {
+        border-radius: 3px;
+        color: #333;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all .1s ease-in;
+
+        &.green {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: -0.05em;
+            background: rgb(46, 204, 113);
+            border: 1px solid darken(rgb(46, 204, 113), 10%);
+
+            &:hover {
+                background: darken(rgb(46, 204, 113), 10%);
+                border: 1px solid darken(rgb(46, 204, 113), 15%);
+            }
+        }
+    }
+
+    span.current {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        line-height: 1.1em;
+        display: block;
+    }
+
+    span.title {
+        font-size: 20px;
+        letter-spacing: -1px;
+        margin: 0 0 5px 0;
+        display: block;
+    }
+
+    .table {
+        border-radius: 3px;
+        font-size: 14px;
+
+        thead {
+            th {
+                border-bottom-width: 1px;
+                font-weight: 500;
+                vertical-align: middle;
+            }
+        }
+
+        tr {
+            &:hover {
+                td {
+                    button {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        td {
+            vertical-align: middle;
+
+            i.ns {
+                color: #aaa;
+            }
+
+            button {
+                background: rgb(46, 204, 113);
+                border: 1px solid darken(rgb(46, 204, 113), 10%);
+                border-radius: 3px;
+                color: #fff;
+                font-size: 12px;
+                padding: 5px 10px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all .1s ease-in;
+                visibility: hidden;
+                opacity: 0;
+                float: right;
+
+                &:hover {
+                    background: darken(rgb(46, 204, 113), 10%);
+                    border: 1px solid darken(rgb(46, 204, 113), 15%);
+                }
+
+                &.danger {
+                    margin-left: 5px;
+                    background: rgb(231, 76, 60);
+                    border: 1px solid darken(rgb(231, 76, 60), 10%);
+
+                    &:hover {
+                        background: darken(rgb(231, 76, 60), 10%);
+                        border: 1px solid darken(rgb(231, 76, 60), 15%);
+                    }
+                }
+            }
+        }
+    }
+}

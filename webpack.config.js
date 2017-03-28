@@ -59,7 +59,7 @@ module.exports = (env) => {
         },
         output: {
             path: staticsPath,
-            filename: '[name].bundle.js',
+            filename: '[name].[chunkhash].js',
         },
         module: {
             rules: [
