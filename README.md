@@ -2,12 +2,12 @@
 > a simple react.js application integrating with stripe api
 
 ### Prerequisites
-
 This project has been developed on Node.js version 6.5.0. I haven't tested this application in any other node version but this should be working atleast 6.5.0 and upwards.
 
+### Demo
+http://lrw-react-stripe.surge.sh/
 
 ### How to run locally
-
 * Clone repo to own computer
 * Run `npm install`
 * Run `npm start` to setup a development server locally, access `http://localhost:3000` to view it in action
